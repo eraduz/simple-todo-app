@@ -2,14 +2,12 @@ import mysql.connector
 import sys
 from datetime import datetime
 
-#database connection
 cnx = mysql.connector.connect(
   host="localhost",
   user="root",
   passwd="",
   database="todo_app"
 )
-# let db run
 cursor = cnx.cursor()
 ts = datetime.now()
 
